@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "语法分析.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -29,7 +29,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "语法分析"
+            }
+          },
+          {
+            "id": "48bff6431ea91adb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "flexStudy/编译工具快速入门.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "编译工具快速入门"
             }
           },
           {
@@ -50,7 +74,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "编译原理/词法分析.md",
+                "file": "语法分析随笔.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -65,7 +89,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "词法分析"
+              "title": "语法分析随笔"
             }
           }
         ]
@@ -81,13 +105,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "语法分析.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "语法分析 的大纲"
             }
           }
         ]
@@ -147,7 +171,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7f55bfe4f4b70d49",
@@ -244,25 +269,29 @@
   },
   "active": "9b40209443287349",
   "lastOpenFiles": [
-    "photos/Pasted image 20250414212717.png",
+    "photos/Pasted image 20250428162551.png",
+    "photos/Pasted image 20250428162514.png",
     "语法分析.md",
+    "photos/Pasted image 20250428161700.png",
+    "photos/Pasted image 20250428161021.png",
+    "photos/Pasted image 20250428153545.png",
+    "photos/Pasted image 20250428153352.png",
+    "photos/Pasted image 20250428152106.png",
+    "photos/Pasted image 20250428135903.png",
+    "photos/Pasted image 20250428130026.png",
+    "photos/Pasted image 20250428125721.png",
+    "photos/Pasted image 20250428124846.png",
     "词法分析.md",
-    "flexStudy/实验2学习.md",
+    "语法分析随笔.md",
+    "flexStudy/编译工具快速入门.md",
+    "编译原理综述.md",
+    "flexStudy/实验3.md",
     "flexStudy/实验1学习.md",
+    "flexStudy/实验2学习.md",
     "README.md",
-    "photos/Pasted image 20250414204047.png",
-    "photos/Pasted image 20250414203457.png",
     "我想写一个编译器/一个好的开头.md",
     "写点日记/2025-04-12.md",
     "写点日记/2025-04-13.md",
-    "写点日记/photos/IMG_20250412_193049.jpg",
-    "写点日记/photos/Pasted image 20250413004035.png",
-    "写点日记/photos/Pasted image 20250413002139.png",
-    "写点日记/photos/Pasted image 20250413001933.png",
-    "写点日记/photos/Pasted image 20250413001025.png",
-    "写点日记/photos/Pasted image 20250413000925.png",
-    "写点日记/photos/Pasted image 20250413000824.png",
-    "写点日记/photos/Pasted image 20250413000710.png",
     "编译原理/语法分析.md",
     "编译原理/词法分析.md",
     "编译原理/flexStudy/编译工具快速入门.md",
@@ -277,10 +306,6 @@
     "linux学习/转行nvim/vim使用手册.md",
     "LaTeX语法.md",
     "准备读研.md",
-    "如何记笔记.md",
-    "算法设计与分析/week7-回溯法.md",
-    "算法设计与分析/算法时间复杂度练习.md",
-    "算法设计与分析/未命名.md",
     "SSH配置.pdf",
     "未命名.canvas",
     "未命名 1.canvas",

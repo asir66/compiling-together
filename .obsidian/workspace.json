@@ -4,17 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "92e764f4ef694bc8",
+        "id": "90864882410d1b53",
         "type": "tabs",
-        "dimension": 74.35897435897436,
         "children": [
           {
-            "id": "9b40209443287349",
+            "id": "a3f074365fcc34a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "语法分析.md",
+                "file": "SDT的使用/类型检查.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -29,89 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "语法分析"
-            }
-          },
-          {
-            "id": "48bff6431ea91adb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "flexStudy/编译工具快速入门.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "编译工具快速入门"
-            }
-          },
-          {
-            "id": "efc5c7b78790fce8",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "写点日记/photos/Pasted image 20250412233742.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250412233742"
-            }
-          },
-          {
-            "id": "59880dedd021caab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "语法分析随笔.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "语法分析随笔"
-            }
-          }
-        ]
-      },
-      {
-        "id": "3890a3c121f9fa99",
-        "type": "tabs",
-        "dimension": 25.64102564102564,
-        "children": [
-          {
-            "id": "8b0ec4ab7827b402",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "语法分析.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "语法分析 的大纲"
+              "title": "类型检查"
             }
           }
         ]
@@ -146,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "分析树",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "7f55bfe4f4b70d49",
@@ -188,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机网络/深刻理解IPv4.md",
+                "file": "语法执导的翻译.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "深刻理解IPv4 的反向链接列表"
+              "title": "语法执导的翻译 的反向链接列表"
             }
           },
           {
@@ -234,10 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java学习/java开发/git学习.md"
+                "file": "SDT的使用/类型检查.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "git学习 的大纲"
+              "title": "类型检查 的大纲"
             }
           },
           {
@@ -250,12 +169,12 @@
               "title": "插件不再活动"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 254.5,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,28 +186,37 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9b40209443287349",
+  "active": "a3f074365fcc34a5",
   "lastOpenFiles": [
-    "photos/Pasted image 20250428162551.png",
-    "photos/Pasted image 20250428162514.png",
-    "语法分析.md",
-    "photos/Pasted image 20250428161700.png",
-    "photos/Pasted image 20250428161021.png",
-    "photos/Pasted image 20250428153545.png",
-    "photos/Pasted image 20250428153352.png",
-    "photos/Pasted image 20250428152106.png",
-    "photos/Pasted image 20250428135903.png",
-    "photos/Pasted image 20250428130026.png",
-    "photos/Pasted image 20250428125721.png",
-    "photos/Pasted image 20250428124846.png",
-    "词法分析.md",
-    "语法分析随笔.md",
-    "flexStudy/编译工具快速入门.md",
-    "编译原理综述.md",
+    "SDT的使用/photos/Pasted image 20250602213334.png",
+    "SDT的使用/photos/Pasted image 20250602213050.png",
+    "SDT的使用/photos/Pasted image 20250602211819.png",
+    "SDT的使用/photos/Pasted image 20250602211052.png",
+    "SDT的使用/photos/Pasted image 20250602210855.png",
+    "SDT的使用/photos/Pasted image 20250602210806.png",
+    "SDT的使用/photos",
+    "SDT的使用/语法制导的翻译.md",
+    "SDT的使用/类型检查.md",
+    "SDT的使用",
+    "flexStudy/实验6.md",
+    "flexStudy/lab5.md",
+    "flexStudy/实验5.md",
+    "flexStudy/实验4.md",
     "flexStudy/实验3.md",
+    "flexStudy/编译工具快速入门.md",
     "flexStudy/实验1学习.md",
     "flexStudy/实验2学习.md",
+    "语法分析.md",
+    "flexStudy/photos/Pasted image 20250601002332.png",
+    "flexStudy/photos/Pasted image 20250601002218.png",
+    "photos/Pasted image 20250531224306.png",
+    "photos/Pasted image 20250531224012.png",
+    "photos/Pasted image 20250531211255.png",
+    "词法分析.md",
+    "编译原理综述.md",
+    "语法分析随笔.md",
     "README.md",
+    "大家一起读龙书.md",
     "我想写一个编译器/一个好的开头.md",
     "写点日记/2025-04-12.md",
     "写点日记/2025-04-13.md",
@@ -298,14 +226,7 @@
     "编译原理/编译原理综述.md",
     "编译原理/flexStudy/实验1学习.md",
     "编译原理/flexStudy/实验2学习.md",
-    "Java学习/java开发/正则表达式.md",
-    "网安技术day1.md",
-    "小米训练/day3-指针、引用和文件操作.md",
     "编译原理/flexStudy/photos",
-    "linux学习/转行nvim/导论.md",
-    "linux学习/转行nvim/vim使用手册.md",
-    "LaTeX语法.md",
-    "准备读研.md",
     "SSH配置.pdf",
     "未命名.canvas",
     "未命名 1.canvas",
@@ -315,8 +236,6 @@
     "小米训练/从O开始写c++",
     "小米训练/photos",
     "小米训练",
-    "算法设计与分析/刷题",
-    "linux学习/转行nvim",
     "Java学习/java开发/JVM内存管理.canvas",
     "数学.canvas"
   ]

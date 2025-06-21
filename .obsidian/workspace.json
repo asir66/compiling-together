@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SDT的使用/类型检查.md",
+                "file": "需要搞懂的经典例题.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,59 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "类型检查"
+              "title": "需要搞懂的经典例题"
+            }
+          },
+          {
+            "id": "4d326a8e55816fe0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "词法分析.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "词法分析"
+            }
+          },
+          {
+            "id": "2e27ddd95d2c55f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "词法分析.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "词法分析"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -63,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "分析树",
+                "query": "0629",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -150,13 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SDT的使用/类型检查.md",
+                "file": "词法分析.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "类型检查 的大纲"
+              "title": "词法分析 的大纲"
             }
           },
           {
@@ -186,46 +235,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a3f074365fcc34a5",
+  "active": "4d326a8e55816fe0",
   "lastOpenFiles": [
-    "SDT的使用/photos/Pasted image 20250602213334.png",
-    "SDT的使用/photos/Pasted image 20250602213050.png",
-    "SDT的使用/photos/Pasted image 20250602211819.png",
-    "SDT的使用/photos/Pasted image 20250602211052.png",
-    "SDT的使用/photos/Pasted image 20250602210855.png",
-    "SDT的使用/photos/Pasted image 20250602210806.png",
-    "SDT的使用/photos",
-    "SDT的使用/语法制导的翻译.md",
-    "SDT的使用/类型检查.md",
-    "SDT的使用",
-    "flexStudy/实验6.md",
-    "flexStudy/lab5.md",
-    "flexStudy/实验5.md",
-    "flexStudy/实验4.md",
-    "flexStudy/实验3.md",
-    "flexStudy/编译工具快速入门.md",
-    "flexStudy/实验1学习.md",
-    "flexStudy/实验2学习.md",
-    "语法分析.md",
-    "flexStudy/photos/Pasted image 20250601002332.png",
-    "flexStudy/photos/Pasted image 20250601002218.png",
-    "photos/Pasted image 20250531224306.png",
-    "photos/Pasted image 20250531224012.png",
-    "photos/Pasted image 20250531211255.png",
+    "需要搞懂的经典例题.md",
     "词法分析.md",
+    "photos/Pasted image 20250621193901.png",
+    "photos/Pasted image 20250621193841.png",
+    "photos/Pasted image 20250621192925.png",
+    "photos/Pasted image 20250621192759.png",
+    "语法分析.md",
+    "大家一起读龙书.md",
+    "photos/Pasted image 20250621183246.png",
+    "photos/qq_pic_merged_1750501511874.jpg",
+    "photos/qq_pic_merged_1750500876974.jpg",
+    "photos/qq_pic_merged_1750500781469.jpg",
+    "photos/Pasted image 20250621170629.png",
+    "photos/qq_pic_merged_1750499338071.jpg",
+    "正则表达式.md",
     "编译原理综述.md",
     "语法分析随笔.md",
+    "SDT的使用/语法制导的翻译.md",
+    "SDT的使用/运行时存储空间的组织和管理.md",
+    "SDT的使用/中间代码生成.md",
+    "SDT的使用/类型检查.md",
+    "flexStudy/flex+yacc+bison快速入门.md",
+    "flexStudy/实验1学习.md",
+    "flexStudy/自己重做实验5.md",
+    "flexStudy/实验5.md",
+    "flexStudy/实验6.md",
+    "SDT的使用/photos",
+    "SDT的使用",
+    "flexStudy/实验4.md",
+    "flexStudy/实验3.md",
+    "flexStudy/实验2学习.md",
     "README.md",
-    "大家一起读龙书.md",
     "我想写一个编译器/一个好的开头.md",
     "写点日记/2025-04-12.md",
     "写点日记/2025-04-13.md",
     "编译原理/语法分析.md",
     "编译原理/词法分析.md",
-    "编译原理/flexStudy/编译工具快速入门.md",
-    "编译原理/编译原理综述.md",
-    "编译原理/flexStudy/实验1学习.md",
-    "编译原理/flexStudy/实验2学习.md",
     "编译原理/flexStudy/photos",
     "SSH配置.pdf",
     "未命名.canvas",

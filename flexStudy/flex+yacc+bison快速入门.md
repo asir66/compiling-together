@@ -104,7 +104,7 @@ int yylex() {
 那么就分别对应了
 1. 按要求完善正则规则区域
 2. 完善code区域（虽然这个功能在规则区的动作里就能实现，但是为了模块化并且实现更复杂的功能）
-# 写一个用来测试的东西
+## 写一个用来测试的东西
 一个测试demo
 ```c
 %{  
@@ -145,8 +145,8 @@ int main() {
 }
 ```
 
-# 逐渐完善
-## 一些行业黑话
+## 逐渐完善
+### 一些行业黑话
 
 1. ws - whitespace空白符，空白符的动作一般都是 {;}
 2. delim - delimiter分隔符，一般用来表示文本中用来分开两个词法单元的符号，例如空格，tab，换行等
@@ -155,11 +155,11 @@ int main() {
 5. digit - digit 0-9的数字中的一个，所以定义也用到字符类
 6. relop - relational operators，关系运算符
 
-## 一些行业规定
+### 一些行业规定
 1. 保留字一般往前放，因为这样才能确保被识别为保留字而不是标识符
 2. return (token)，token一般用括号包起来
-## 一些行业技巧
-### 状态
+### 一些行业技巧
+#### 状态
 > 在 Flex 中，**状态（Start Conditions）** 是用于控制词法分析器在不同上下文中切换规则的机制。它允许你根据当前解析的上下文环境，选择性地启用或禁用特定的词法规则。这在处理需要跨行或嵌套的结构（如注释、字符串、条件编译等）时非常有用。
 
 有两种状态（严格来说三种）
@@ -179,6 +179,99 @@ int main() {
 ```
 
 前缀表示状态下应该做什么
-### 一些宏
+#### 一些宏
 
 ECHO，把读到的输出出去，这也是默认的行为。所以如果一些情况下没有对一些token行为进行定义的话就会输出出来
+
+# YACC/BISON
+
+我愿意称之为文法定义文件。文法规定以及语法语义设计。
+通过文法自动化得到语法分析步骤，并设计语义动作，使得成功实现语法分析和语义执行
+
+一个.y文件大致是这样的
+```cpp
+%{
+#include<xxx>
+%}
+
+%token xxx
+
+%%
+exp: 文法 {语义动作}
+
+辅助函数
+%%
+```
+
+## 如何使用和编译
+
+关于有什么用？actually yacc表示的是：
+Yet Another Compiler Compiler（又一个编译器编译器）挺好玩的定义
+
+yacc能根据我们给的一套上下文无关文法自动生成对应的语法分析器代码。
+
+我们应该主动的去阅读一些软件的文档。：
+```shell
+其作用在一开始就给我们揭示了：
+Generate a deterministic LR or generalized LR (GLR) parser employing  
+LALR(1), IELR(1), or canonical LR(1) parser tables.
+
+简而言之，我们可以选择
+-H
+-d
+-v
+
+这三个是最重要的。
+```
+
+如果我们现在有一个.y文件，我们可以通过
+```shell
+yacc -d logic.y # 
+```
+
+下一步就是阅读程序给我们的makefile文件：
+```Makefile
+test5-1: test5-1.tab.o lex.yy.o  
+	gcc -o test5-1 test5-1.tab.o lex.yy.o -ly
+
+lex.yy.o: lex.yy.c test5-1.tab.h
+	gcc -c lex.yy.c
+
+test5-1.tab.o: test5-1.tab.c
+	gcc -c test5-1.tab.c
+
+lex.yy.c: test5-1.l
+	flex test5-1.l
+
+test5-1.tab.c: test5-1.y
+	bison -dv test5-1.y
+
+test5-1.tab.h: test5-1.y
+	echo "test5-1.tab.h was created at the same time as test5-1.tab.c."
+
+clean:
+	rm -f test5-1 lex.yy.o test5-1.tab.o lex.yy.c test5-1.tab.c test5-1.tab.h test5-1.stackdump test5-1.output
+
+```
+
+从这里就应该可以看出来了，这个程序就是借助词法分析器的.o文件和语法分析文件.o连接而成的文件。
+文件逻辑是
+- .l->.yy.c->.yy.o
+- .y->.tab.c->.tab.o
+
+而需要连接起来就需要内容上有一点点规定：
+
+## 文件间的关联
+
+首先确认：
+1. 词法分析器和语法分析器都来来自于文法规定，且文法在.y文件中定义实现。所以核心先实现.y文件。
+2. 文法中规定了语法规则。所以是语法分析器的核心。文法符号中规定了文法符号，文法符号最后基本上要对应到终结符，终结符来源就是词法分析器。于是就是在这里定义Token。
+   如果二义文法甚至要定义好优先级和结合性
+3. 然后词法分析器的核心其实是什么？actually是yylex函数
+   [[实验1学习#yylex()]]。
+   同理.y文件其实也就是我们设计文法并设计实现，最后yyac自动编译得到一个yyparse函数而已
+
+所以如果是一个很复杂的问题的时候，我们完全是可以自己写一个.c文件来实现更强大的功能，然后调用yyparse函数。
+
+而我们前面也注意到了，其实yacc会得到一个.h文件，这个文件一个重要的功能其实就是定义很多，诸如token的预定义等。而此时我们词法分析器需要保持一致，此时也就不再需要自己#define了，可以直接#include
+
